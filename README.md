@@ -1,6 +1,6 @@
 # Automatic Licence Plate Recognition
 
-In February, 2017 I was selected as team leader for my senior design project. The problem was to design a system that could receive an image of a license plate, extract the registration numbers off of the plate and recognize the characters. This was a research project that was to include the use of neural networks for character classification. We decided to use Python 3.6, and experimented with Theano/Keras and scikit-learn for our machine learning libraries.
+In February, 2017 I was selected as team leader for my senior design project at UMass Dartmouth. The problem was to design a system that could receive an image of a license plate, extract the registration numbers off of the plate and recognize the characters. This was a research project that was to include the use of neural networks for character classification. We decided to use Python 3.6, and experimented with Theano/Keras and scikit-learn for our machine learning libraries.
 
 ## Files
 
