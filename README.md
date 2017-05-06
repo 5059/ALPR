@@ -4,7 +4,7 @@ In February, 2017 I was selected as team leader for my senior design project. Th
 
 ## Files
 
-What is posted in this repository is a code sample from this project.
+What is posted in this repository is a code sample of the character segmentation methods used for this project.
 
 ### alpr_som.py
 
