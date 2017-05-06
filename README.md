@@ -1,37 +1,15 @@
-## Welcome to GitHub Pages
+# Automatic Licence Plate Recognition
 
-You can use the [editor on GitHub](https://github.com/JeffPack/ALPR/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+In February, 2017 I was selected as team leader for my senior design project. The problem was to design a system that could receive an image of a license plate, extract the registration numbers off of the plate and recognize the characters. This was a research project that was to include the use of neural networks for character classification. We decided to use Python 3.6, and experimented with Theano/Keras and scikit-learn for our machine learning libraries.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Files
 
-### Markdown
+What is posted in this repository is a code sample from this project.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### alpr_som.py
 
-```markdown
-Syntax highlighted code block
+This class represents a experimental implementation of a neuron gas self-organizing map. Although it was a successful implementation, we abandoned it to find a faster method.
 
-# Header 1
-## Header 2
-### Header 3
+### rectfinder.py
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/JeffPack/ALPR/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+This is the character segmentation algorithm we designed. It essentially is a flood fill algorithm that tracks the boundaries of the areas being flooded. It analyzes each cluster of pixels and either accepts or rejects it as a meaningful region. It then extracts the accepted regions into a list of subimages. In order for this algorithm to be successful, the license plate must be preprocessed in a specific way - namely luminous grayscale, and inverse rounding. This is mentioned in a conference paper which we are in the process of writing about this project.
